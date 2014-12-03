@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option id="order" value="name">Alphabetical</option>
+        <option id="order" value="age">Newest</option>
+        <option id="order" value="carrier">Carrier</option>
+        <option id="order" value="camera">Camera</option>
+        <option id="order" value="screenSize">Screen Size</option>
+        <option id="order" value="battery">Battery</option>
+        <option id="order" value="weight">Weight</option>
+      </select>
+      Phones to compare
+      <select ng-model="phone1">
+        <option ng-repeat="phone in phones" value="{{phone.id}}">{{phone.name}}</option>
+      </select>
+      <select ng-model="phone2">
+        <option ng-repeat="phone in phones" value="{{phone.id}}">{{phone.name}}</option>
+      </select>
+      <a href="#/phones/compare/{{phone1}}/{{phone2}}"><button>Compare</button></a> 
+
+      <!--<form action="#/phones/compare">
+        <button id="compare" ng-click="compare()">Compare Two</button>
+      </form> -->
+    </div> 
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="phones">
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
+            class="thumbnail phone-listing">
+          <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+          <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+          <p>{{phone.snippet}}</p>
+          <button ng-click="quickView(phone)">QuickView</button>
+
+          <!--<form action="">
+            <input ng-model="compare" type="checkbox" name="sideBySide" value="{{phone.id}}">Side By Side Comparison<br>
+          </form> -->
+         
+         
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

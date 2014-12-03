@@ -1,0 +1,138 @@
+<table>
+<tr>
+        <td><th>Phone</th></td>
+        <td>{{phone1.name}}</td>
+        <td>{{phone2.name}}</td>
+</tr>
+<tr>
+	<td><th>Images</th></td>
+	<td><img src="{{phone1.images[0]}}"></td>
+	<td><img src="{{phone2.images[0]}}"></td>
+</tr>
+<tr>
+        <td><th>Availability</th></td>
+        <td><p ng-repeat="availability in phone1.availability">{{availability | na}}</p></td>
+        <td><p ng-repeat="availability in phone2.availability">{{availability | na}}</p></td>
+</tr>
+<tr>
+        <td><th>Battery: Standby Time</th></td>
+        <td>{{phone1.battery.standbyTime | na}}</td>
+        <td>{{phone2.battery.standbyTime | na}}</td>
+
+</tr>
+<tr>
+	<td><th>Battery: Talk Time </th></td>
+	<td> {{phone1.battery.talkTime | na}} </td>
+	<td> {{phone2.battery.talkTime | na}} </td>
+</tr>
+<tr>
+	<td><th>Battery: Type </th></td>
+    <td>{{phone1.battery.type | na}}</td>
+	<td>{{phone2.battery.type | na}}</td>
+</tr>
+<tr>
+        <td><th>Camera: Features</th></td>
+		<td> <p ng-repeat="feature in phone1.camera.features">{{feature | na}}</p></td>
+		<td> <p ng-repeat="feature in phone2.camera.features">{{feature | na}}</p></td>
+</tr>
+<tr>
+	<td><th>Camera: Primary </th></td>
+	<td> {{phone1.camera.primary | na}} </td>
+	<td> {{phone2.camera.primary | na}} </td>
+</tr>
+<tr>
+	<td><th>Connectivity: Bluetooth </th></td>
+	<td> {{phone1.connectivity.bluetooth | na}} </td>
+	<td> {{phone2.connectivity.bluetooth | na}} </td>
+</tr>
+<tr>
+	<td><th>Connectivity: Bluetooth </th></td>
+	<td> {{phone1.connectivity.bluetooth | na}} </td>
+	<td> {{phone2.connectivity.bluetooth | na}} </td>
+</tr>
+<tr>
+	<td><th>Connectivity: cell </th></td>
+	<td> {{phone1.connectivity.cell | na}} </td>
+	<td> {{phone2.connectivity.cell | na}} </td>
+</tr>
+<tr>
+	<td><th>Connectivity: gps </th></td>
+	<td> {{phone1.connectivity.gps | na}} </td>
+	<td> {{phone2.connectivity.gps | na}} </td>
+</tr>
+<tr>
+	<td><th>Connectivity: infrared </th></td>
+	<td> {{phone1.connectivity.infrared | na}} </td>
+	<td> {{phone2.connectivity.infrared | na}} </td>
+</tr>
+<tr>
+	<td><th>Connectivity: wifi </th></td>
+	<td> {{phone1.connectivity.wifi | na}} </td>
+	<td> {{phone2.connectivity.wifi | na}} </td>
+</tr>
+<tr>
+	<td><th>Display: Screen Resolution </th></td>
+	<td> {{phone1.display.screenResolution | na}} </td>
+	<td> {{phone2.display.screenResolution | na}} </td>
+</tr>
+<tr>
+	<td><th>Display: Screen Size </th></td>
+	<td> {{phone1.display.screenSize | na}} </td>
+	<td> {{phone2.display.screenSize | na}} </td>
+</tr>
+<tr>
+	<td><th>Display: Touch Screen </th></td>
+	<td> {{phone1.display.touchScreen | na}} </td>
+	<td> {{phone2.display.touchScreen | na}} </td>
+</tr>
+<tr>
+	<td><th>Hardware: CPU </th></td>
+	<td> {{phone1.hardware.cpu | na}} </td>
+	<td> {{phone2.hardware.cpu | na}} </td>
+</tr>
+<tr>
+	<td><th>Hardware: audio jack </th></td>
+	<td> {{phone1.hardware.audioJack | na}} </td>
+	<td> {{phone2.hardware.audioJack | na}} </td>
+</tr>
+<tr>
+	<td><th>Hardware: accelerometer </th></td>
+	<td> {{phone1.hardware.accelerometer | na}} </td>
+	<td> {{phone2.hardware.accelerometer | na}} </td>
+</tr>
+<tr>
+	<td><th>Hardware: fm Radio </th></td>
+	<td> {{phone1.hardware.fmRadio | na}} </td>
+	<td> {{phone2.hardware.fmRadio | na}} </td>
+</tr>
+<tr>
+	<td><th>Hardware: physical keyboard </th></td>
+	<td> {{phone1.hardware.physicalKeyboard | na}} </td>
+	<td> {{phone2.hardware.physicalKeyboard | na}} </td>
+</tr>
+<tr>
+	<td><th>Hardware: usb </th></td>
+	<td> {{phone1.hardware.usb | na}} </td>
+	<td> {{phone2.hardware.usb | na}} </td>
+</tr>
+<tr>
+	<td><th>Dimensions </th></td>
+	<td> <p ng-repeat="dim in phone1.sizeAndWeight.dimensions"> {{dims | na}}</p> </td>
+	<td> <p ng-repeat="dim in phone2.sizeAndWeight.dimensions"> {{dims | na}}</p> </td>
+</tr>
+<tr>
+	<td><th>Weight </th></td>
+	<td> {{phone1.sizeAndWeight.weight | na}} </td>
+	<td> {{phone2.sizeAndWeight.weight | na}} </td>
+</tr>
+<tr>
+	<td><th>Storage: RAM </th></td>
+	<td> {{phone1.storage.ram | na}} </td>
+	<td> {{phone2.storage.ram | na}} </td>
+</tr>
+<tr>
+	<td><th>Storage: flash </th></td>
+	<td> {{phone1.storage.flash | na}} </td>
+	<td> {{phone2.storage.flash | na}} </td>
+</tr>
+</table>
